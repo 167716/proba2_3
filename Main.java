@@ -7,6 +7,7 @@ class Main {
     System.out.println("Wybierz program:");
     System.out.println("1-Tabliczba mnożenia");
     System.out.println("2-Średnia ocen");
+    System.out.println("3-Potęgi liczby 2");
     
     int x=scan.nextInt();
     switch(x){
@@ -45,7 +46,16 @@ class Main {
         System.out.println("Średnia ocen wynosi: "+srednia); 
         break;
 
+      case 3:
         
+        double[] potegi = new double[10];
+        for(double i=0;i<11;i++){
+          potegi[i]=Math.pow(2,i);
+        }
+        for(int i=10;i!=-1;i--){
+          System.out.print(potegi[i]+" ");
+        }
+        break;
     }
   }
 }
