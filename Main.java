@@ -47,13 +47,22 @@ class Main {
         break;
 
       case 3:
-        
-        double[] potegi = new double[10];
-        for(double i=0;i<11;i++){
-          potegi[i]=Math.pow(2,i);
+        double k;
+        double[] potegi = new double[11];
+        for(int i=0;i<11;i++){
+          k=i;
+          potegi[i]=Math.pow(2,k);
         }
         for(int i=10;i!=-1;i--){
           System.out.print(potegi[i]+" ");
+        }
+        break;
+
+      case 4:
+        Random random=new Random();
+        double[] losowe = new double[10];
+        for(int i=0;i<10;i++){
+          
         }
         break;
     }
