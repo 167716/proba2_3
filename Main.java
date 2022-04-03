@@ -6,6 +6,7 @@ class Main {
    
     System.out.println("Wybierz program:");
     System.out.println("1-Tabliczba mnożenia");
+    System.out.println("2-Średnia ocen");
     
     int x=scan.nextInt();
     switch(x){
@@ -28,8 +29,23 @@ class Main {
           break;
 
       case 2:
-        
+        int suma=0;
+        int srednia;
+        System.out.println("Podaj ilość ocen: "); 
+        int ilosc=scan.nextInt();
+        int[] oceny = new int[ilosc];
+        for(int i=0;i<ilosc;i++){
+          System.out.println("Podaj ocene nr."+i);
+          oceny[i]=scan.nextInt();
+        }
+        for(int i=0;i<ilosc;i++){
+          suma=suma+oceny[i];
+        }
+        srednia=suma/ilosc;
+        System.out.println("Średnia ocen wynosi: "+srednia); 
         break;
+
+        
     }
   }
 }
